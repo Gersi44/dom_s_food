@@ -1,0 +1,174 @@
+body{
+
+    font-size: 14px;
+    line-height: 1.5em;
+    font-family: Verdana, Arial;
+    margin: 0;
+}
+
+header{
+    padding:10px 2%;
+    height:60px;
+    background: #772299;
+}
+
+header img{
+    height:60px;
+}
+
+header #hamburger{
+    display:none
+}
+
+nav{
+    color:#772299; 
+    text-align:center;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+}
+
+nav li{
+    display: inline-block;
+    padding: 10px 2%;
+    cursor:pointer;
+    background: white;
+}
+
+nav li:hover{
+    background: #EEEEEE;
+}
+
+section{
+    padding: 10px 2%;
+}
+
+h1,h2{
+    margin: 10px 0;
+    padding: 0;
+    line-height:28px;
+}
+
+h1{
+    font-size:24px;
+}
+
+h2{
+    font-size:18px; 
+    color: #772299;
+}
+
+#search{
+    background: #666666;
+}
+
+#search div{
+    width: 30%; 
+    display: inline-block;
+}
+
+#search input, #search select{
+    color: #666666;
+    border: 1px solid #AAAAAA;
+    font-size: 16px;
+    padding: 5px 1%;
+    width:80%;
+}
+
+#search input[type=text], #search select{
+    background: white;
+}
+
+#search input[type=button]{
+    cursor: pointer;
+    color: white;
+    background: #772299;
+}
+
+.restaurant{
+    padding: 10px 0;
+    border-bottom: 1px solid #AAAAAA;
+}
+
+.restaurantlink, .showmenu{
+    color: #772299;
+    display:inline-block;
+    padding:10px;
+    background: #EEEEEE;
+    cursor:pointer;
+}
+
+.itemspan{
+    color: #AAAAAA;
+    font-size:12px;
+}
+
+.itemmenu{padding:0;}
+
+.itemmenu li{
+    list-style:none;
+    padding: 5px 1%;
+    cursor:pointer;
+    color: #772299;
+}
+
+.itemmenu li:hover{
+    background: #EEEEEE;
+}
+
+.itemmenu li em{
+    color: #AAAAAA;
+}
+
+.itemmenu li span{
+    font-weight: bold;    
+}
+
+footer{
+    background: #772299;
+    color: white;
+    text-align:center;
+    padding: 10px 2%;
+}
+
+
+
+@media screen and (max-width:768px){
+
+    header #hamburger{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 2%;
+        height:60px;
+        width:60px;
+        cursor:pointer;
+        background: url("img/hamburger.png") transparent no-repeat center;
+        background-size:contain;
+    }
+    
+    nav{
+        width:100%;
+        display:none;
+        position:absolute;
+        z-index:999;
+    }
+    
+    nav li{
+        display: block;
+        width: 100%;
+        border-bottom:1px solid #AAAAAA;
+    }
+    
+    #search div{
+        width: 96%;
+        margin: 4px 0;
+    }
+    
+    #search input, #search select{
+        width:100%;
+    }
+
+}

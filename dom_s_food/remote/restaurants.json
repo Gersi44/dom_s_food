@@ -1,0 +1,5 @@
+[
+    {"id":1,"name":"Test Restaurant","city":"Warsaw","cuisine":"Polish"},
+    {"id":2,"name":"Another Test Bar","city":"Paris","cuisine":"French"},
+    {"id":3,"name":"Test Pizzeria","city":"Berlin","cuisine":"Italian"}
+]
